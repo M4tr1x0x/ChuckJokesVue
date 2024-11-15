@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ChuckJokesVue</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+</head>
+<body>
+  <div id="app">
+    <h1>Chuck Norris Jokes</h1>
+    <ul>
+      <li v-for="joke in chuck" :key="joke.value">
+        {{ joke.value }}
+      </li>
+    </ul>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
